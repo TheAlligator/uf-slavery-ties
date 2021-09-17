@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+} 
+html, body {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    min-height: 1280px;
+    color: #3b3b3b;
+    font-size: 1rem;
+}
+#logo {
+    padding: 2rem;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    display: block;
+    text-align: center;
+}
+#alligator{
+    max-width: 40%;
+    height: auto;
+}
+h1{
+    font-family: 'Arbutus Slab', 'Georgia', serif;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 1rem;
+    margin: 0;
+}
+#headerimg img{
+    width: 100%;
+    height: auto;
+}
+#bill {
+    position: absolute;
+    left: 58.2%;
+    transform: translate(-50%, 0%);
+}
+#bill img{
+    width: 50%;
+    height: auto;
+}
+#sg img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+#sgGraphic img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.subhead{
+    font-size: 1.2rem;
+    font-family: 'Arbutus Slab', 'Georgia', serif;
+}
+.byline{
+    font-family: 'Arbutus Slab', 'Georgia', serif;
+}
+#podcasts{
+    text-align: center;
+}
+#badges{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#spotify{
+    height: 4rem; 
+    width: auto;
+}
+#apple{
+    height: 4rem; 
+    width: auto;
+}
+cite{
+    color: #7f7f7f
+}
+#panel {
+    min-height: 1150px;
+    background-color: #000000;
+}
+video{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#movieSub{
+    display: none;
+}
+#billGraphicSub{
+    display: none;
+}
+footer{
+    padding: 2rem;
+    max-width: 100%;
+    height: 12rem;
+    background-color: #000000;
+    display: block;
+    text-align: left;
+}
+#alligatorfoot{
+    width: 20%;
+    height: auto;
+}
+.credits{
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+a:link{
+   color: #008c44; 
+   text-decoration: none;
+}
+a:visited{
+    color: #008c44;
+    text-decoration: none;
+}
+a:hover{
+    color: #008c44;
+    text-decoration: underline;
+}
+
+/* start media queries for responsiveness */
+@media screen and (max-width: 1660px){
+    #bill{
+        display: none;
+    }
+    #sg{
+        display: none;
+    }
+    #sgGraphic img{
+        display: block;
+    } 
+}
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 2rem;
+    }
+    #panel{
+        min-height: 925px;
+    }
+}
+@media screen and (max-width: 767px){
+    #alligator{
+        max-width: 80%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    #panel{
+        min-height: 10rem;
+    }
+    video{
+        width: 100%;
+    }
+    #movie{
+        display: none;
+    }
+    #movieSub{
+        display: block;
+    }
+    #billGraphic{
+        display: none;
+    }
+    #billGraphicSub{
+        height: auto;
+        display: block;
+    }
+    #alligatorfoot{
+        width: 60%;
+    }
+    .credits{
+        font-size: 0.75rem;
+    }
+    #spotify{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    #apple{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 550px){
+    #alligator{
+        max-width: 100%;
+    }
+    #alligatorfoot{
+        width: 80%;
+    }
+}
